@@ -24,32 +24,31 @@ const skillGroups = [
 
 export default function Home() {
   return (
-    <div className="relative">
+    <div className="relative noise">
       {/* Hero */}
-      <section className="relative min-h-[92vh] flex items-center pt-16">
+      <section className="relative min-h-[94vh] flex items-center pt-16">
         <div className="absolute inset-0 grid-bg pointer-events-none" />
-        <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[900px] h-[420px] rounded-full bg-accent/[0.14] blur-[120px] pointer-events-none" />
-        <div className="absolute top-40 right-[-10%] w-[380px] h-[380px] rounded-full bg-accent2/[0.08] blur-[100px] pointer-events-none" />
+        <div className="absolute -top-32 left-1/2 -translate-x-1/2 w-[820px] h-[380px] rounded-full bg-accent/[0.09] blur-[130px] pointer-events-none" />
 
-        <div className="relative mx-auto max-w-6xl px-6 pt-20 pb-16">
+        <div className="relative mx-auto max-w-6xl px-6 pt-20 pb-16 w-full">
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-            className="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full glass text-[12.5px] text-zinc-400 mb-8"
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            className="flex items-center gap-3 font-mono text-[12px] tracking-[0.16em] text-zinc-500 uppercase mb-8"
           >
-            <span className="relative flex h-2 w-2">
+            <span className="relative flex h-1.5 w-1.5">
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-mint opacity-60" />
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-mint" />
+              <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-mint" />
             </span>
             Open to AI/ML and software engineering roles · 2026 grad
           </motion.div>
 
           <motion.h1
-            initial={{ opacity: 0, y: 30 }}
+            initial={{ opacity: 0, y: 34 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.85, delay: 0.08, ease: [0.22, 1, 0.36, 1] }}
-            className="font-display text-5xl md:text-7xl font-semibold tracking-[-0.03em] leading-[1.04] max-w-3xl"
+            transition={{ duration: 0.9, delay: 0.06, ease: [0.22, 1, 0.36, 1] }}
+            className="font-display text-[42px] md:text-[76px] leading-[1.02] font-semibold tracking-[-0.035em] max-w-4xl"
           >
             I build AI systems that
             <span className="text-shimmer"> hold up under verification.</span>
@@ -58,116 +57,131 @@ export default function Home() {
           <motion.p
             initial={{ opacity: 0, y: 26 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.85, delay: 0.18, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-7 max-w-xl text-[15.5px] leading-relaxed text-zinc-400"
+            transition={{ duration: 0.9, delay: 0.16, ease: [0.22, 1, 0.36, 1] }}
+            className="mt-8 max-w-xl text-[15.5px] leading-[1.8] text-zinc-400"
           >
-            AI/ML engineer at <span className="text-zinc-200">IIIT-Delhi</span> (Integrated
-            B.Tech + M.Tech, CGPA 9.29/10). I build RAG pipelines, LLM agents with formal
-            verification, and full-stack products: and I put the receipts in public
-            repositories you can actually run.
+            Aditi Singla. AI/ML engineer at IIIT-Delhi, Integrated B.Tech + M.Tech, CGPA
+            9.29/10. I build RAG pipelines, LLM agents with formal verification, and
+            full-stack products, and I put the receipts in public repositories you can run.
           </motion.p>
 
           <motion.div
-            initial={{ opacity: 0, y: 24 }}
+            initial={{ opacity: 0, y: 22 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.85, delay: 0.28, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-10 flex flex-wrap items-center gap-4"
+            transition={{ duration: 0.85, delay: 0.26, ease: [0.22, 1, 0.36, 1] }}
+            className="mt-11 flex flex-wrap items-center gap-3.5"
           >
             <Link
               href="/projects/"
-              className="group px-6 py-3.5 rounded-xl bg-white text-black text-sm font-semibold hover:bg-zinc-200 transition-all hover:scale-[1.02] active:scale-[0.99]"
+              className="group inline-flex items-center gap-2 px-6 py-3.5 rounded-xl bg-white text-black text-sm font-semibold hover:bg-zinc-200 transition-all hover:scale-[1.02] active:scale-[0.99]"
             >
               Explore the work
-              <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
+              <span className="inline-block group-hover:translate-x-1 transition-transform">→</span>
             </Link>
             <a
               href="/portfolio/Aditi_Singla_Resume.pdf"
-              className="px-6 py-3.5 rounded-xl glass text-sm font-medium text-zinc-200 hover:bg-white/[0.09] transition-all hover:scale-[1.02] active:scale-[0.99]"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl border border-white/15 text-sm font-medium text-zinc-100 hover:bg-white/[0.06] transition-all"
             >
-              Download resume ↓
+              Resume ↓
             </a>
             <a
-              href="https://github.com/Aditi21372"
-              target="_blank"
-              rel="noreferrer"
-              className="px-6 py-3.5 rounded-xl glass text-sm font-medium text-zinc-200 hover:bg-white/[0.09] transition-all hover:scale-[1.02] active:scale-[0.99]"
+              href="mailto:aditisingla.as11@gmail.com"
+              className="inline-flex items-center gap-2 px-6 py-3.5 rounded-xl text-sm font-medium text-zinc-400 hover:text-white transition-all link-underline"
             >
-              GitHub ↗
-            </a>
-            <a
-              href="https://www.linkedin.com/in/aditi-singla11/"
-              target="_blank"
-              rel="noreferrer"
-              className="px-6 py-3.5 rounded-xl glass text-sm font-medium text-zinc-300 hover:bg-white/[0.09] transition-all"
-            >
-              LinkedIn ↗
+              aditisingla.as11@gmail.com
             </a>
           </motion.div>
         </div>
       </section>
 
       {/* Metrics */}
-      <section className="relative mx-auto max-w-6xl px-6 -mt-8">
+      <section className="relative mx-auto max-w-6xl px-6 -mt-10">
         <MetricsStrip />
       </section>
 
-      {/* Featured projects */}
-      <section className="relative mx-auto max-w-6xl px-6 mt-28">
+      {/* Selected work: editorial index */}
+      <section className="relative mx-auto max-w-6xl px-6 mt-32">
         <Reveal>
-          <div className="flex items-end justify-between mb-10">
+          <div className="flex items-end justify-between mb-2">
             <div>
-              <div className="text-[12px] font-mono text-accent tracking-widest uppercase mb-3">
+              <div className="text-[11px] font-mono text-zinc-500 tracking-[0.16em] uppercase mb-3">
                 Selected work
               </div>
               <h2 className="font-display text-3xl md:text-[40px] font-semibold tracking-tight text-zinc-100">
-                Featured projects
+                Six things worth your time
               </h2>
             </div>
             <Link
               href="/projects/"
-              className="hidden sm:inline-flex text-sm text-zinc-400 hover:text-white transition-colors group"
+              className="hidden sm:inline-flex text-sm text-zinc-500 hover:text-white transition-colors group"
             >
-              All projects
-              <span className="inline-block ml-1.5 group-hover:translate-x-1 transition-transform">→</span>
-            </Link>
-            <Link
-              href="/projects/"
-              className="hidden sm:inline-flex text-sm text-zinc-400 hover:text-white transition-colors group"
-            >
-              All projects
+              All {allProjects.length} projects
               <span className="inline-block ml-1.5 group-hover:translate-x-1 transition-transform">→</span>
             </Link>
           </div>
         </Reveal>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div className="mt-10 border-t border-line">
+          {allProjects.slice(0, 6).map((p, i) => (
+            <Reveal key={p.slug} delay={i * 0.05} y={18}>
+              <a
+                href={`/projects/${p.slug}/`}
+                className="group grid grid-cols-[auto_1fr_auto] md:grid-cols-[64px_1fr_auto_auto] items-center gap-x-6 py-6 border-b border-line hover:bg-white/[0.02] transition-colors px-2 -mx-2 rounded-lg"
+              >
+                <span className="font-mono text-[12px] text-zinc-600 group-hover:text-accent transition-colors">
+                  {String(i + 1).padStart(2, "0")}
+                </span>
+                <div className="min-w-0">
+                  <div className="font-display text-[17px] md:text-[19px] font-medium text-zinc-100 tracking-tight group-hover:text-white transition-colors truncate">
+                    {p.name}
+                    <span className="text-zinc-600 font-normal hidden md:inline text-[14px] ml-3">
+                      {p.tagline}
+                    </span>
+                  </div>
+                </div>
+                <span className="hidden md:block font-mono text-[11px] text-zinc-600 tracking-wider">
+                  {p.stack.slice(0, 2).join(" · ")}
+                </span>
+                <span className="text-zinc-600 group-hover:text-zinc-200 group-hover:translate-x-1.5 transition-all duration-300 text-lg">
+                  →
+                </span>
+              </a>
+            </Reveal>
+          ))}
+        </div>
+      </section>
+
+      {/* Featured cards */}
+      <section className="relative mx-auto max-w-6xl px-6 mt-24">
+        <Reveal>
+          <div className="text-[11px] font-mono text-zinc-500 tracking-[0.16em] uppercase mb-8">
+            Deep dives
+          </div>
+        </Reveal>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
           {featuredProjects.map((p, i) => (
             <ProjectCard key={p.slug} project={p} index={i} />
           ))}
         </div>
       </section>
 
-      {/* Skills */}
-      <section className="relative mx-auto max-w-6xl px-6 mt-28">
+      {/* Stack */}
+      <section className="relative mx-auto max-w-6xl px-6 mt-32">
         <Reveal>
-          <div className="text-[12px] font-mono text-accent tracking-widest mb-3">Stack</div>
-          <h2 className="font-display text-3xl md:text-[40px] font-semibold tracking-tight text-zinc-100 mb-10">
-            Tools I reach for
-          </h2>
+          <div className="text-[11px] font-mono text-zinc-500 tracking-[0.16em] uppercase mb-10">
+            Stack
+          </div>
         </Reveal>
-        <div className="grid md:grid-cols-3 gap-5">
+        <div className="grid md:grid-cols-3 gap-x-10 gap-y-8">
           {skillGroups.map((g, gi) => (
             <Reveal key={g.title} delay={gi * 0.08}>
-              <div className="glass rounded-2xl p-7 h-full hover:border-white/[0.14] transition-colors duration-500">
-                <div className="text-[13px] font-semibold text-zinc-200 mb-5 font-display tracking-wide">
+              <div className="border-t border-line pt-5">
+                <div className="text-[12.5px] font-mono tracking-[0.14em] uppercase text-zinc-400 mb-4">
                   {g.title}
                 </div>
-                <div className="flex flex-wrap gap-2">
+                <div className="flex flex-wrap gap-x-4 gap-y-2.5">
                   {g.items.map((s) => (
-                    <span
-                      key={s}
-                      className="text-[12px] px-3 py-1.5 rounded-lg bg-white/[0.04] border border-white/[0.06] text-zinc-300 font-mono hover:border-accent/40 hover:text-white transition-colors cursor-default"
-                    >
+                    <span key={s} className="text-[13.5px] text-zinc-500 hover:text-zinc-200 transition-colors cursor-default">
                       {s}
                     </span>
                   ))}
@@ -179,34 +193,34 @@ export default function Home() {
       </section>
 
       {/* Contact */}
-      <section className="relative mx-auto max-w-6xl px-6 mt-28 mb-8">
+      <section className="relative mx-auto max-w-6xl px-6 mt-32 mb-10">
         <Reveal>
-          <div className="relative overflow-hidden rounded-3xl border border-line bg-gradient-to-br from-accent/[0.13] via-panel to-accent2/[0.06] px-8 md:px-14 py-14 md:py-20 text-center">
-            <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-[480px] h-[240px] bg-accent/25 blur-[90px] rounded-full pointer-events-none" />
-            <div className="relative">
-              <h2 className="font-display text-3xl md:text-5xl font-semibold tracking-tight text-zinc-50">
-                Let's build something that ships.
-              </h2>
-              <p className="mt-4 text-zinc-400 max-w-lg mx-auto text-[15px] leading-relaxed">
-                I am looking for AI/ML and software engineering roles where the work is real,
-                the systems get used, and the code gets reviewed.
-              </p>
-              <div className="mt-9 flex flex-wrap justify-center gap-4">
-                <a
-                  href="mailto:your.email@example.com"
-                  className="px-6 py-3.5 rounded-xl bg-white text-black text-sm font-semibold hover:bg-zinc-200 transition-all hover:scale-[1.02]"
-                >
-                  Say hello
-                </a>
-                <a
-                  href="https://www.linkedin.com/in/aditi-singla11/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="px-6 py-3.5 rounded-xl glass text-sm font-medium text-zinc-200 hover:bg-white/[0.09] transition-all"
-                >
-                  LinkedIn ↗
-                </a>
-              </div>
+          <div className="text-center max-w-2xl mx-auto py-10">
+            <div className="text-[11px] font-mono text-zinc-500 tracking-[0.16em] uppercase mb-5">
+              Next
+            </div>
+            <h2 className="font-display text-4xl md:text-6xl font-semibold tracking-[-0.03em] text-zinc-50">
+              Have something worth building?
+            </h2>
+            <p className="mt-5 text-zinc-400 text-[15px] leading-relaxed">
+              I am looking for teams where the work is real, the code gets reviewed, and the
+              systems get used. Tell me about yours.
+            </p>
+            <div className="mt-9 flex flex-wrap justify-center gap-4">
+              <a
+                href="mailto:aditisingla.as11@gmail.com"
+                className="px-7 py-4 rounded-xl bg-white text-black text-sm font-semibold hover:bg-zinc-200 transition-all hover:scale-[1.02]"
+              >
+                aditisingla.as11@gmail.com
+              </a>
+              <a
+                href="https://www.linkedin.com/in/aditi-singla11/"
+                target="_blank"
+                rel="noreferrer"
+                className="px-7 py-4 rounded-xl border border-white/15 text-sm font-medium text-zinc-100 hover:bg-white/[0.06] transition-all"
+              >
+                LinkedIn ↗
+              </a>
             </div>
           </div>
         </Reveal>

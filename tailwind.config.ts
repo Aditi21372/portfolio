@@ -9,12 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        base: "#050507",
-        panel: "#0b0b10",
-        line: "rgba(255,255,255,0.08)",
-        accent: "#7c5cff",
-        accent2: "#38bdf8",
-        mint: "#34d399",
+        base: "#08080a",
+        panel: "#0e0e12",
+        line: "rgba(255,255,255,0.07)",
+        accent: "#6c8cff",
+        accent2: "#8fa8ff",
+        mint: "#4ade80",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
@@ -22,17 +22,12 @@ const config: Config = {
         mono: ["ui-monospace", "SFMono-Regular", "monospace"],
       },
       animation: {
-        shimmer: "shimmer 6s linear infinite",
-        float: "float 7s ease-in-out infinite",
+        shimmer: "shimmer 8s linear infinite",
       },
       keyframes: {
         shimmer: {
           "0%": { backgroundPosition: "200% 50%" },
           "100%": { backgroundPosition: "-200% 50%" },
-        },
-        float: {
-          "0%,100%": { transform: "translateY(0px)" },
-          "50%": { transform: "translateY(-14px)" },
         },
       },
     },

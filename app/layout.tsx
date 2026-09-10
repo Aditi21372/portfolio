@@ -37,7 +37,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body
-        className={`${inter.variable} ${grotesk.variable} font-sans bg-base text-zinc-200 antialiased min-h-screen`}
+        className={`${inter.variable} ${grotesk.variable} font-sans bg-base text-zinc-200 antialiased min-h-screen noise`}
       >
         <Nav />
         <main className="relative">{children}</main>

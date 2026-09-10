@@ -41,7 +41,7 @@ export default function Footer() {
 
         <div className="mt-14 pt-6 border-t border-line flex flex-col sm:flex-row items-center justify-between gap-3 text-[12px] text-zinc-600">
           <span>© {new Date().getFullYear()} Aditi Singla</span>
-          <span className="font-mono">Next.js · GitHub Pages · Built by hand</span>
+          <span className="font-mono">Next.js · GitHub Pages</span>
         </div>
       </div>
     </footer>

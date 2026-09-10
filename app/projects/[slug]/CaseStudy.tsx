@@ -4,6 +4,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import Reveal from "@/components/Reveal";
 import { allProjects } from "@/lib/projects";
+import { withBasePath } from "@/lib/basePath";
 
 export default function CaseStudy({ slug }: { slug: string }) {
   const project = allProjects.find((p) => p.slug === slug)!;
@@ -19,7 +20,7 @@ export default function CaseStudy({ slug }: { slug: string }) {
 
       <div className="relative mx-auto max-w-4xl px-6">
         <motion.a
-          href="/projects/"
+          href={withBasePath("/projects/")}
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           className="inline-flex items-center text-sm text-zinc-500 hover:text-zinc-200 transition-colors mb-10"
@@ -153,7 +154,7 @@ export default function CaseStudy({ slug }: { slug: string }) {
           className="mt-20 pt-8 border-t border-line"
         >
           <a
-            href={`/projects/${next.slug}/`}
+            href={withBasePath(`/projects/${next.slug}/`)}
             className="group flex items-center justify-between glass rounded-2xl px-7 py-6 hover:bg-white/[0.05] transition-colors"
           >
             <div>

@@ -12,7 +12,9 @@ export default function ProjectCard({
 }) {
   return (
     <motion.a
-      href={`/projects/${project.slug}/`}
+      href={project.repo}
+      target="_blank"
+      rel="noreferrer"
       initial={{ opacity: 0, y: 30 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-40px" }}
@@ -46,7 +48,7 @@ export default function ProjectCard({
             ))}
           </div>
           <span className="text-zinc-600 group-hover:text-zinc-200 group-hover:translate-x-1 transition-all duration-300">
-            →
+            ↗
           </span>
         </div>
       </div>

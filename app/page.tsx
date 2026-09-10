@@ -125,7 +125,9 @@ export default function Home() {
           {allProjects.slice(0, 6).map((p, i) => (
             <Reveal key={p.slug} delay={i * 0.05} y={18}>
               <a
-                href={`/projects/${p.slug}/`}
+                href={p.repo}
+                target="_blank"
+                rel="noreferrer"
                 className="group grid grid-cols-[auto_1fr_auto] md:grid-cols-[64px_1fr_auto_auto] items-center gap-x-6 py-6 border-b border-line hover:bg-white/[0.02] transition-colors px-2 -mx-2 rounded-lg"
               >
                 <span className="font-mono text-[12px] text-zinc-600 group-hover:text-accent transition-colors">

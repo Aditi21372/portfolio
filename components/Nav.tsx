@@ -75,10 +75,16 @@ export default function Nav() {
             );
           })}
           <a
+            href="/portfolio/Aditi_Singla_Resume.pdf"
+            className="ml-3 px-4 py-2 text-[13.5px] rounded-full bg-white text-black font-medium hover:bg-zinc-200 transition-colors"
+          >
+            Resume
+          </a>
+          <a
             href="https://github.com/Aditi21372"
             target="_blank"
             rel="noreferrer"
-            className="ml-3 px-4 py-2 text-[13.5px] rounded-full bg-white text-black font-medium hover:bg-zinc-200 transition-colors"
+            className="ml-1 px-4 py-2 text-[13.5px] rounded-full glass text-zinc-200 hover:bg-white/[0.09] transition-colors"
           >
             GitHub ↗
           </a>

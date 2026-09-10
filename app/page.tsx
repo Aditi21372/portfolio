@@ -81,6 +81,12 @@ export default function Home() {
               <span className="inline-block ml-2 group-hover:translate-x-1 transition-transform">→</span>
             </Link>
             <a
+              href="/portfolio/Aditi_Singla_Resume.pdf"
+              className="px-6 py-3.5 rounded-xl glass text-sm font-medium text-zinc-200 hover:bg-white/[0.09] transition-all hover:scale-[1.02] active:scale-[0.99]"
+            >
+              Download resume ↓
+            </a>
+            <a
               href="https://github.com/Aditi21372"
               target="_blank"
               rel="noreferrer"
